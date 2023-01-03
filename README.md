@@ -23,13 +23,14 @@ Convert labels to YOLO format.
    - PASCAL: ~/label-format-converter/label/Annotations/*.xml
 2. (CVAT/COCO) Rename labels file.
     - CVAT:  annotations.xml
-    - COCO: instances_default.xml 
-3. Launch de main script with the origin format label as argument.
+    - COCO: instances_default.xml
+3. Update res/classes.json with the classes of the dataset
+4. Launch de main script with the origin format label as argument.
 ```bash
 cd label-format-converter
 python3 main.py [-f --format] [cvat, coco, pascal]
 ```
-4. Yolo folder will be created and the new labels will be placed in the next directory: ~/label-format-converter/labels/yolo
+5. Yolo folder will be created and the new labels will be placed in the next directory: ~/label-format-converter/labels/yolo
 
 ## License
 
